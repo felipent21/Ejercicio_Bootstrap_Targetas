@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>INICIO</title>
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+           
+        <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">  
+    
+    </head>
+    <body>
+        
+        <h1>SELECCIONA PARA VOLVER</h1>
+        <!--ACA INSERTAMOS UNA LISTA PARA LOS ENLACES DEL SITIO-->
+        <div class="list-group">            
+            <a href="index.html" class="list-group-item list-group-item-action">IR A INICIO</a>                       
+          </div>
+        <!--ACA VA LA TABLA-->
+        <div class="container">
+        <table class="table" id="tabla">
+            <thead>
+              <tr>
+                <th scope="col">CODIGO</th>
+                <th scope="col">NOMBRE</th>
+                <th scope="col">APELLIDO</th>
+                <th scope="col">CORREO</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>juan</td>
+                <td>pinto</td>
+                <td>@juan pinto</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>pedro</td>
+                <td>picaroca</td>
+                <td>@picaroca</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>julio</td>
+                <td>verne</td>
+                <td>@jverne</td>                
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>omar</td>
+                <td>castro</td>
+                <td>@omarcito</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>jose</td>
+                <td>feliciano</td>
+                <td>@josef</td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>amparo</td>
+                <td>mendoza</td>
+                <td>@mendozaa</td>                
+              </tr>
+            </tbody>
+          </table>
+        </div>        
+    </body>
+    <script>
+        $(document).ready(function () {
+        $('#tabla').DataTable();
+       } );
+    </script>
+</html>
